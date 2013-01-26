@@ -54,8 +54,6 @@ grails.spring.bean.packages = []
 grails.web.disable.multipart=false
 //Use deep JSON serialization
 grails.converters.json.default.deep = true
-//Use deep XML serialization
-grails.converters.xml.default.deep = true
 
 // request parameters to mask when logging exceptions
 grails.exceptionresolver.params.exclude = ['password']
