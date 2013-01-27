@@ -8,9 +8,7 @@ class Exchange {
 
     String name
     String code
-    static hasMany = [stocks:Stock]
-//    static belongsTo = [exchangeList:ExchangeList]
-
+    static hasMany = [stocks: Stock]
 
     static constraints = {
         name(blank: false)
@@ -22,7 +20,6 @@ class Exchange {
         def loginResponse = http.get(path: '/data.asmx/SymbolList', query: [Token: token, Exchange: exchangeCode])
         def symbolList = loginResponse.SYMBOLS[0]
 
-
         symbolList.SYMBOL.each {
             Stock tempStock = new Stock()
             String tempCodeString = it.attributes().get 'Code'
@@ -30,6 +27,9 @@ class Exchange {
             tempStock.setName(tempNameString)
             tempStock.setCode(tempCodeString)
 
+            if (tempCodeString.equals("AAPL")) {
+                tempStock.retrieveFullQuoteList(token, exchangeCode, tempCodeString)
+            }
             addToStocks(tempStock)
         }
     }

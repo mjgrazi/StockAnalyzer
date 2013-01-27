@@ -4,8 +4,6 @@ import grails.converters.JSON
 import grails.converters.XML
 import org.springframework.dao.DataIntegrityViolationException
 
-import static grails.converters.JSON.*
-
 class ExchangeListController {
 
     static scaffold = ExchangeList
@@ -112,7 +110,18 @@ class ExchangeListController {
         exchangeList.save()
     }
 
-
+    def getStockList() {
+        LoginData loginData = new LoginData()
+        loginData.retrieveLoginData()
+        if (params.id && Exchange.findByCode(params.id)) {
+            Exchange exchange = Exchange.findByCode(params.id)
+            exchange.retrieveStockList(loginData.loginToken, exchange.code)
+            exchange.save()
+            render "Saved stock list for exchange: " + params.id
+        } else {
+            render "Error: Exchange " + params.id + " not found"
+        }
+    }
 
     def getJSON() {
         render ExchangeList.list() as JSON

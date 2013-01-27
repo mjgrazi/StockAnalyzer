@@ -1,5 +1,6 @@
 package stockanalyzer
 
+import grails.converters.JSON
 import org.springframework.dao.DataIntegrityViolationException
 
 class StockController {
@@ -101,4 +102,10 @@ class StockController {
             redirect(action: "show", id: id)
         }
     }
+
+
+    def getTest() {
+        render Stock.findByCode("AAPL") as JSON
+    }
+
 }

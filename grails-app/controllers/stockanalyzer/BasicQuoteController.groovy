@@ -109,4 +109,6 @@ class BasicQuoteController {
         loginData.getLoginData()
         basicQuote.getSingleQuote(loginData.loginToken, 'NASDAQ', 'AAPL')
     }
+
+
 }

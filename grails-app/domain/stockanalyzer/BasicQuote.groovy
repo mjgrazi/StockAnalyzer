@@ -4,21 +4,23 @@ import groovyx.net.http.HTTPBuilder
 
 class BasicQuote {
 
-    public GString symbol
+    static scaffold = true
+
+    String symbol
     BigDecimal open
     BigDecimal high
     BigDecimal low
     BigDecimal close
-    int volume
-    public Date date
+    BigInteger volume
+    Date date
 
     static constraints = {
     }
 
-    def void getSingleQuote(String token, String exchange, String symbol) {
+    def void getLatestQuote(String token, String exchange, String symbol) {
         HTTPBuilder http = new HTTPBuilder('http://ws.eoddata.com')
 
-        def loginResponse = http.get(path: '/data.asmx/QuoteGet', query: [Token: token, Exchange: exchange, Symbol: symbol])
+        def loginResponse = http.get(path: '/data.asmx/QuoteGet', query: [Token: token, Exchange: exchange, Symbol: this.symbol])
         def testStr
 //        setOpen(BigDecimal(loginResponse.attributes().get 'Open')
     }
