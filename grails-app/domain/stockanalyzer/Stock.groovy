@@ -5,12 +5,13 @@ import groovyx.net.http.HTTPBuilder
 class Stock {
 
     static scaffold = true
+    List quotes = new ArrayList()
     static hasMany = [quotes: BasicQuote]
-    String code
+    String symbol
     String name
 
     static constraints = {
-        code(blank: false)
+        symbol(blank: false)
         name(blank: false)
     }
 

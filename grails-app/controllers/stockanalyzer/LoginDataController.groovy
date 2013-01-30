@@ -1,9 +1,6 @@
 package stockanalyzer
 
-import groovyx.net.*
-import groovyx.net.http.HTTPBuilder
 import org.springframework.dao.DataIntegrityViolationException
-import grails.converters.XML
 
 class LoginDataController {
     static scaffold = LoginData
@@ -105,7 +102,13 @@ class LoginDataController {
     }
 
     def doLogin() {
-        LoginData loginData = new LoginData()
-        loginData.retrieveLoginData()
+        if (!LoginData.findByName("Login")) {
+            LoginData loginData = new LoginData()
+            loginData.retrieveLoginData()
+            render("Login Token: " + loginData.loginToken)
+        } else {
+            render("Login already exists")
+        }
+
     }
 }

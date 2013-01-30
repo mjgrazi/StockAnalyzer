@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>http-builder</artifactId>
     <groupId>org.codehaus.groovy.modules.http-builder</groupId>
@@ -186,7 +187,7 @@
                             <goal>execute</goal>
                         </goals>
                         <configuration>
-                            <source>${pom.basedir}/src/main/script/release_tweet.groovy</source>
+                            <source>$ { pom.basedir } / src / main / script / release_tweet.groovy</source>
                         </configuration>
                     </execution>
                 </executions>
@@ -249,7 +250,8 @@
                             <goal>cobertura</goal>
                         </goals>
                     </execution>
-                    --><execution>
+                    -->
+                    <execution>
                         <id>defaults</id>
                         <goals>
                             <goal>clean</goal>
@@ -303,7 +305,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>2.1.1</version>
                 <dependencies>
-    <!-- For SyntaxHighlighter macro: http://code.google.com/p/m2-site-tools/ -->
+                    <!-- For SyntaxHighlighter macro: http://symbol.google.com/p/m2-site-tools/ -->
                     <dependency>
                         <groupId>com.anasoft.os</groupId>
                         <artifactId>m2st-doxia-macros</artifactId>
@@ -399,7 +401,9 @@
         <pluginRepository>
             <id>m2st-releases</id>
             <url>http://anasoft-os-repo.googlecode.com/svn/repository/releases</url>
-            <releases><enabled>true</enabled></releases>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
         </pluginRepository>
     </pluginRepositories>
 

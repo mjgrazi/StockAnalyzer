@@ -104,18 +104,20 @@ class ExchangeListController {
     }
 
     def retrieveExchangeList() {
-        ExchangeList exchangeList = new ExchangeList()
-        exchangeList.retrieveExchangeList()
-        exchangeList.setName("Exchange List")
-        exchangeList.save()
+        if (!ExchangeList.findByName("Exchange List")) {
+            ExchangeList exchangeList = new ExchangeList()
+            exchangeList.retrieveExchangeList()
+            exchangeList.setName("Exchange List")
+            exchangeList.save()
+        } else
+            render "Exchange list already loaded"
     }
 
     def getStockList() {
-        LoginData loginData = new LoginData()
-        loginData.retrieveLoginData()
+        LoginData loginData = LoginData.findByName("Login")
         if (params.id && Exchange.findByCode(params.id)) {
             Exchange exchange = Exchange.findByCode(params.id)
-            exchange.retrieveStockList(loginData.loginToken, exchange.code)
+            exchange.retrieveStockList(exchange.code)
             exchange.save()
             render "Saved stock list for exchange: " + params.id
         } else {

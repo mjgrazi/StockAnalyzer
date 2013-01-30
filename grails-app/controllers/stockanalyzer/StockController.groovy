@@ -103,9 +103,9 @@ class StockController {
         }
     }
 
-
-    def getTest() {
-        render Stock.findByCode("AAPL") as JSON
+    def getQuotes() {
+        Stock tempStock = Stock.findBySymbol(params.id)
+        render tempStock as JSON
     }
 
 }
