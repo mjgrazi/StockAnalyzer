@@ -1,4 +1,5 @@
 import grails.converters.JSON
+import stockanalyzer.BasicQuote
 import stockanalyzer.Exchange
 import stockanalyzer.ExchangeList
 import stockanalyzer.Stock
@@ -22,6 +23,15 @@ class BootStrap {
             def returnArray = [:]
             returnArray['name'] = it.name
             returnArray['symbol'] = it.symbol
+            return returnArray
+        }
+        JSON.registerObjectMarshaller(BasicQuote) {
+            def returnArray = [:]
+            returnArray['open'] = it.open
+            returnArray['close'] = it.close
+            returnArray['high'] = it.high
+            returnArray['low'] = it.low
+            returnArray['volume'] = it.volume
             return returnArray
         }
     }

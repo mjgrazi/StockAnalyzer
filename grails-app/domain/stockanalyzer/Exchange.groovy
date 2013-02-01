@@ -31,9 +31,9 @@ class Exchange {
                     tempStock.setName(tempNameString)
                     tempStock.setSymbol(tempCodeString)
                     addToSymbols(tempStock)
-                    if (tempCodeString.equals("AAPL")) {
-                        tempStock.retrieveFullQuoteList(loginData.loginToken, exchangeCode, tempCodeString)
-                    }
+//                    if (tempCodeString.equals("AAPL")) {
+//                        tempStock.retrieveFullQuoteList(loginData.loginToken, exchangeCode, tempCodeString)
+//                    }
                 }
             } else {
                 generateLoginToken()

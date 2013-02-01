@@ -43,5 +43,4 @@ class Stock {
             addToQuotes(quote)
         }
     }
-
 }
