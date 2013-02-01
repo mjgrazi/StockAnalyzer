@@ -9,6 +9,7 @@ class Stock {
     static hasMany = [quotes: BasicQuote]
     String symbol
     String name
+    String exchange
 
     static constraints = {
         symbol(blank: false)

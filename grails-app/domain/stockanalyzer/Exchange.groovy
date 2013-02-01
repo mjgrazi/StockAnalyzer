@@ -30,10 +30,8 @@ class Exchange {
                     String tempNameString = it.attributes().get 'Name'
                     tempStock.setName(tempNameString)
                     tempStock.setSymbol(tempCodeString)
+                    tempStock.setExchange(exchangeCode)
                     addToSymbols(tempStock)
-//                    if (tempCodeString.equals("AAPL")) {
-//                        tempStock.retrieveFullQuoteList(loginData.loginToken, exchangeCode, tempCodeString)
-//                    }
                 }
             } else {
                 generateLoginToken()
