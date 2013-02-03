@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73bc669-21c2-4f5b-86ed-c786978b3da3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/TestDatabase.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StockAnalyzer.iws" />
@@ -17,7 +13,7 @@
     <file path="/LoginData.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317812555" ignored="false" />
     <file path="/fragment.java" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358984359426" ignored="false" />
     <file path="/fragment.js2" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358103226660" ignored="false" />
-    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359850585213" ignored="false" />
+    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359850782087" ignored="false" />
     <file path="/LoginDataController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317796181" ignored="false" />
     <file path="/pom.xml" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358109021572" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/BasicQuoteTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358213950013" ignored="false" />
@@ -163,7 +159,7 @@
       <file leaf-file-name="Stock.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="33" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
+            <state line="37" column="33" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,7 +186,7 @@
       <file leaf-file-name="TestDatabaseController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="2" selection-start="6048" selection-end="6048" vertical-scroll-proportion="2.447099">
+            <state line="164" column="2" selection-start="6048" selection-end="6048" vertical-scroll-proportion="2.5791366">
               <folding />
             </state>
           </provider>
@@ -917,7 +913,11 @@
       <created>1359683962593</created>
       <updated>1359683962593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added support for gathering any NYSE or NASDAQ stock.&#10;&#10;use /testdatabase/getter/&lt;symbol&gt;">
+      <created>1359850791476</created>
+      <updated>1359850791476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -952,11 +952,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33891213" sideWeight="0.75440526" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5959271" sideWeight="0.7754601" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5967033" sideWeight="0.2202454" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.59801763" sideWeight="0.2202454" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10981595" sideWeight="0.4032967" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006135" sideWeight="0.40198237" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49784085" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.497552" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -970,7 +971,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49537322" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49784085" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1132,7 +1132,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="33" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
+        <state line="37" column="33" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1154,7 +1154,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="2" selection-start="6048" selection-end="6048" vertical-scroll-proportion="2.447099">
+        <state line="164" column="2" selection-start="6048" selection-end="6048" vertical-scroll-proportion="2.5791366">
           <folding />
         </state>
       </provider>
