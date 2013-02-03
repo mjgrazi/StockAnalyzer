@@ -27,6 +27,7 @@ class BootStrap {
         }
         JSON.registerObjectMarshaller(BasicQuote) {
             def returnArray = [:]
+            returnArray['date'] = it.date
             returnArray['open'] = it.open
             returnArray['close'] = it.close
             returnArray['high'] = it.high

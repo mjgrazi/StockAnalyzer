@@ -2,6 +2,8 @@ package stockanalyzer
 
 import groovyx.net.http.HTTPBuilder
 
+import java.text.SimpleDateFormat
+
 class Stock {
 
     static scaffold = true
@@ -27,6 +29,8 @@ class Stock {
 
             String dateStr = it.attributes().get 'DateTime'
             Date theDate = new Date().parse("yyyy-MM-dd", dateStr)
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyy")
+            String dateString = new String(dateFormat.format(theDate));
             BigDecimal tempOpen = new BigDecimal(it.attributes().get('Open'))
             BigDecimal tempClose = new BigDecimal(it.attributes().get('Close'))
             BigDecimal tempHigh = new BigDecimal(it.attributes().get('High'))
@@ -38,7 +42,7 @@ class Stock {
             quote.setHigh(tempHigh)
             quote.setLow(tempLow)
             quote.setVolume(tempVolume)
-            quote.setDate(theDate)
+            quote.setDate(dateString)
             quote.setSymbol(symbol)
 
             addToQuotes(quote)

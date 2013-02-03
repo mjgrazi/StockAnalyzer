@@ -5,6 +5,7 @@ import groovyx.net.http.HTTPBuilder
 class ExchangeList {
 
     static scaffold = true
+    List exchanges = new ArrayList()
     static hasMany = [exchanges: Exchange]
 
     String name
@@ -24,13 +25,14 @@ class ExchangeList {
                     Exchange tempExchange = new Exchange()
                     String tempNameString = it.attributes().get 'Name'
                     String tempCodeString = it.attributes().get 'Code'
+                    tempExchange.setName(tempNameString)
+                    tempExchange.setCode(tempCodeString)
+
                     if (tempCodeString.equals("NASDAQ") || tempCodeString.equals("NYSE")) {
-                        tempExchange.setName(tempNameString)
-                        tempExchange.setCode(tempCodeString)
                         tempExchange.retrieveStockList(tempCodeString)
-                        addToExchanges(tempExchange)
-                        println(tempExchange.name + " added to database")
                     }
+                    addToExchanges(tempExchange)
+                    println(tempExchange.name + " added to database")
                 }
             } else {
                 LoginData delLogin = LoginData.findByName("Login")
@@ -45,5 +47,4 @@ class ExchangeList {
             retrieveExchangeList()
         }
     }
-
 }

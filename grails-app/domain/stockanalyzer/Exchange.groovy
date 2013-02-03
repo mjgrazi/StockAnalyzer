@@ -31,7 +31,8 @@ class Exchange {
                     tempStock.setName(tempNameString)
                     tempStock.setSymbol(tempCodeString)
                     tempStock.setExchange(exchangeCode)
-                    addToSymbols(tempStock)
+                    if (tempStock)
+                        addToSymbols(tempStock)
                 }
             } else {
                 generateLoginToken()
