@@ -155,12 +155,72 @@ class TestDatabaseController {
         }
     }
 
+    def getter200() {
+        def quoteList
+        String input = params.id
+        input = input.toUpperCase()
+        Stock stock = Stock.findBySymbol(input)
+        if (stock) {
+            if (stock.quotes.size() < 1) {
+                stock.retrieve200Quotes(LoginData.findByName('Login').loginToken, stock.exchange, stock.symbol)
+                quoteList = stock.quotes
+            } else {
+                quoteList = BasicQuote.findAllBySymbol(input)
+                quote200List = BasicQuote.findAllByIdGreaterThan(quoteList.size() - 201)
+                stock.quotes = quote200List
+            }
+        }
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            returnArray['quotes'] = it.quotes
+            return returnArray
+        }
+        render stock as JSON
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            return returnArray
+        }
+    }
+
     def exchangePopulator() {
         List exchangeList = Exchange.findAll()
         exchangeList.each { exchange ->
             exchange.retrieveStockList(exchange.code)
             println exchange.name
             exchange.save()
+        }
+    }
+
+    def stockdata() {
+        def quoteList
+        String input = params.id
+        input = input.toUpperCase()
+        Stock stock = Stock.findBySymbol(input)
+        if (stock) {
+            if (stock.quotes.size() < 1) {
+                stock.retrieveFullQuoteList(LoginData.findByName('Login').loginToken, stock.exchange, stock.symbol)
+                quoteList = stock.quotes
+            } else {
+                quoteList = BasicQuote.findAllBySymbol(input)
+            }
+        }
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            returnArray['quotes'] = it.quotes
+            return returnArray
+        }
+        render stock as JSON
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            return returnArray
         }
     }
 }

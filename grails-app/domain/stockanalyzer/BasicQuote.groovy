@@ -12,7 +12,8 @@ class BasicQuote {
     BigDecimal low
     BigDecimal close
     BigInteger volume
-    String date
+    String dateString
+    Date date
 
     static constraints = {
     }
