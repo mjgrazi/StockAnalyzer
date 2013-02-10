@@ -17,6 +17,8 @@ class Exchange {
     }
 
     def retrieveStockList(String exchangeCode) {
+//        DataGetterService service = new DataGetterService()
+//        service.retrieveExchange(exchangeCode)
         LoginData loginData = LoginData.findByName("Login")
         if (loginData) {
             HTTPBuilder http = new HTTPBuilder('http://ws.eoddata.com')
@@ -37,13 +39,11 @@ class Exchange {
             } else {
                 generateLoginToken()
                 retrieveStockList(exchangeCode)
-
             }
         } else {
             generateLoginToken()
             retrieveStockList(exchangeCode)
         }
-
     }
 
     def generateLoginToken() {

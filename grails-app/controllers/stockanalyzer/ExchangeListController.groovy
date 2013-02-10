@@ -103,26 +103,9 @@ class ExchangeListController {
         }
     }
 
-    def retrieveExchangeList() {
-        if (!ExchangeList.findByName("Exchange List")) {
-            ExchangeList exchangeList = new ExchangeList()
-            exchangeList.retrieveExchangeList()
-            exchangeList.setName("Exchange List")
-            exchangeList.save()
-        } else
-            render "Exchange list already loaded"
-    }
-
     def getStockList() {
-        LoginData loginData = LoginData.findByName("Login")
-        if (params.id && Exchange.findByCode(params.id)) {
-            Exchange exchange = Exchange.findByCode(params.id)
-            exchange.retrieveStockList(exchange.code)
-            exchange.save()
-            render "Saved stock list for exchange: " + params.id
-        } else {
-            render "Error: Exchange " + params.id + " not found"
-        }
+        DataGetterService service = new DataGetterService()
+        render service.getStockListForExchange(params.id) as JSON
     }
 
     def getJSON() {

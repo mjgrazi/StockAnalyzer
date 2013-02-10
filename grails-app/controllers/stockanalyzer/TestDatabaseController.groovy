@@ -8,7 +8,7 @@ class TestDatabaseController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-        redirect(action: "run", params: params)
+        redirect(action: "defaultRunOperation", params: params)
     }
 
     def list(Integer max) {
@@ -99,18 +99,6 @@ class TestDatabaseController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'testDatabase.label', default: 'TestDatabase'), id])
             redirect(action: "show", id: id)
         }
-    }
-
-    def run() {
-        if (!ExchangeList.findByName("Exchange List")) {
-            ExchangeList exchangeList = new ExchangeList()
-            exchangeList.retrieveExchangeList()
-            exchangeList.setName("Exchange List")
-            exchangeList.save()
-        } else
-            render "Exchange list already loaded"
-
-
     }
 
     def loadExchange() {
@@ -223,5 +211,21 @@ class TestDatabaseController {
             return returnArray
         }
     }
+
+    def populateExchanges() {
+        DataGetterService dgs = new DataGetterService()
+        dgs.retrieveExchangeList()
+    }
+
+    def getExchangeListJSON() {
+        List exchangeList = ExchangeList.list()
+        render exchangeList as JSON
+    }
+
+    def defaultRunOperation() {
+        populateExchanges()
+        render "Exchanges loaded"
+    }
+
 }
 

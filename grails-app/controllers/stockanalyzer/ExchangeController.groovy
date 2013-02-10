@@ -1,5 +1,6 @@
 package stockanalyzer
 
+import grails.converters.JSON
 import org.springframework.dao.DataIntegrityViolationException
 
 class ExchangeController {
@@ -100,6 +101,16 @@ class ExchangeController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'exchange.label', default: 'Exchange'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def stockList() {
+        Exchange exchange = Exchange.findByCode(params.id)
+        if (exchange) {
+            if (exchange.symbols.size() < 1)
+                exchange.retrieveStockList(exchange.code)
+            render exchange as JSON
+        } else
+            render "Exchange not found"
     }
 
 }

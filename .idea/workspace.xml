@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73bc669-21c2-4f5b-86ed-c786978b3da3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StockAnalyzer.iws" />
@@ -11,7 +17,7 @@
     <file path="/LoginData.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317812555" ignored="false" />
     <file path="/fragment.java" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358984359426" ignored="false" />
     <file path="/fragment.js2" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358103226660" ignored="false" />
-    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359857761288" ignored="false" />
+    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360472308867" ignored="false" />
     <file path="/LoginDataController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317796181" ignored="false" />
     <file path="/pom.xml" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358109021572" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/BasicQuoteTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358213950013" ignored="false" />
@@ -20,19 +26,20 @@
     <file path="/QuoteGetterController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358374866715" ignored="false" />
     <file path="/BasicQuoteController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359255034996" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/ExchangeTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358615145385" ignored="false" />
-    <file path="/ExchangeController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358991108071" ignored="false" />
-    <file path="/Exchange.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359849442792" ignored="false" />
+    <file path="/ExchangeController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360458374510" ignored="false" />
+    <file path="/Exchange.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360469316329" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/ExchangeListTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358984125477" ignored="false" />
     <file path="/ExchangeList.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359839790930" ignored="false" />
     <file path="/Stock.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359857069683" ignored="false" />
-    <file path="/ExchangeListController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359318618179" ignored="false" />
+    <file path="/ExchangeListController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360467599507" ignored="false" />
     <file path="/Config.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358999984967" ignored="false" />
     <file path="/StockController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359315141781" ignored="false" />
     <file path="/TechnicalsCalculatorService.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359224048038" ignored="false" />
     <file path="/a.dummy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359503786424" ignored="false" />
     <file path="/BootStrap.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359847270226" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/TestDatabaseTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359601364200" ignored="false" />
-    <file path="/TestDatabaseController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359854849553" ignored="false" />
+    <file path="/TestDatabaseController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360445855761" ignored="false" />
+    <file path="/DataGetterService.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360469200066" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy" line="24" class="stockanalyzer.BasicQuote" package="stockanalyzer">
         <option name="ENABLED" value="true" />
@@ -110,7 +116,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="168" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="156" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -138,7 +144,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="164" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="152" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -152,7 +158,49 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="158" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" line="146" class="stockanalyzer.TestDatabaseController" package="stockanalyzer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="112" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" line="0" class="stockanalyzer.ExchangeList" package="stockanalyzer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="107" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -167,6 +215,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -210,19 +259,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Stock.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-20.869566">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StockController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/StockController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="21" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.0">
+            <state line="105" column="21" selection-start="3630" selection-end="3630" vertical-scroll-proportion="-6.130435">
               <folding />
             </state>
           </provider>
@@ -231,34 +271,29 @@
       <file leaf-file-name="Exchange.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="18" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="20" column="0" selection-start="381" selection-end="489" vertical-scroll-proportion="-4.5652175">
+              <folding>
+                <element signature="e#23#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDatabaseController.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy">
+      <file leaf-file-name="ExchangeController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="0" selection-start="6021" selection-end="6021" vertical-scroll-proportion="2.080292">
-              <folding />
+            <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-14.565217">
+              <folding>
+                <element signature="e#23#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractCallSite.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.5.jar!/org/codehaus/groovy/runtime/callsite/AbstractCallSite.class">
+      <file leaf-file-name="DispatcherServlet.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="28" selection-start="5051" selection-end="5051" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayUtil.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.5.jar!/org/codehaus/groovy/runtime/ArrayUtil.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="37" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+            <state line="112" column="151" selection-start="7629" selection-end="7629" vertical-scroll-proportion="-7.4">
               <folding />
             </state>
           </provider>
@@ -267,7 +302,7 @@
       <file leaf-file-name="ExchangeList.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="51" selection-start="108" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="-9.782609">
               <folding />
             </state>
           </provider>
@@ -276,16 +311,45 @@
       <file leaf-file-name="ExchangeListController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="54" selection-start="4310" selection-end="4310" vertical-scroll-proportion="0.0">
+            <state line="58" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="-8.26087">
+              <folding>
+                <element signature="e#23#61#0" expanded="true" />
+                <element signature="n#!!block;n#index#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#list#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#create#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#save#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#show#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#edit#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="n#!!block;n#update#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+                <element signature="e#2308#2802#0" expanded="false" />
+                <element signature="n#!!block;n#delete#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataGetterService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/stockanalyzer/DataGetterService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="28" selection-start="3340" selection-end="3340" vertical-scroll-proportion="0.5181347">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicQuote.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy">
+      <file leaf-file-name="LoginDataController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/LoginDataController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+            <state line="104" column="23" selection-start="3865" selection-end="3865" vertical-scroll-proportion="-13.086957">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stock.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-9.6">
               <folding />
             </state>
           </provider>
@@ -294,10 +358,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicQuoteController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/BasicQuoteController.groovy">
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="18" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -322,22 +386,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/QuoteGetter.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/QuoteGetterController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/stockanalyzer/TechnicalsCalculatorService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/BasicQuoteController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/StockController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/LoginDataController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/LoginData.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/stockanalyzer/DataGetterService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" />
       </list>
     </option>
   </component>
@@ -351,7 +415,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1676" />
+    <option name="width" value="1273" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -418,14 +482,35 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Grails.Grails:StockAnalyzer">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="GeronimoConfiguration" factoryName="Local">
       <deployment />
       <server-settings>
@@ -486,27 +571,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
@@ -988,7 +1052,11 @@
       <created>1359857511690</created>
       <updated>1359857511690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added getter200 for last 200 days. Probably needs to be changed to get last 200 quotes instead of calendar days">
+      <created>1360472332939</created>
+      <updated>1360472332939</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1012,7 +1080,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
+    <frame x="4" y="22" width="1273" height="1028" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49510404" order="7" side_tool="false" content_ui="tabs" />
@@ -1021,13 +1089,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33891213" sideWeight="0.75440526" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46483517" sideWeight="0.7680982" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3061674" sideWeight="0.8834556" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31648353" sideWeight="0.40736195" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30549452" sideWeight="0.11083945" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18773006" sideWeight="0.6835165" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16870415" sideWeight="0.6938326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49784085" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.497552" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1035,13 +1104,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24908201" sideWeight="0.67180616" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31648353" sideWeight="0.58834356" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.48828828" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31648353" sideWeight="0.5674847" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.48588958" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49537322" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49784085" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1113,82 +1181,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="173" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="173" selection-start="692" selection-end="692" vertical-scroll-proportion="0.41706926" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/TestDatabase.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="79" selection-end="79" vertical-scroll-proportion="-1.8" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.5.jar!/org/codehaus/groovy/runtime/callsite/AbstractCallSite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="28" selection-start="5051" selection-end="5051" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.5.jar!/org/codehaus/groovy/runtime/ArrayUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="54" selection-start="4310" selection-end="4310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="51" selection-start="108" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
+        <state line="13" column="37" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.2.RELEASE.jar!/org/springframework/web/servlet/mvc/SimpleControllerHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.107913665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="32" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.8143608">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="18" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/BasicQuote.groovy">
@@ -1208,16 +1208,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/StockController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="21" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.0">
+        <state line="222" column="6" selection-start="8086" selection-end="8086" vertical-scroll-proportion="-144.13043">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/LoginData.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-20.869566">
+        <state line="21" column="10" selection-start="594" selection-end="594" vertical-scroll-proportion="-13.695652">
           <folding />
         </state>
       </provider>
@@ -1225,9 +1225,96 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/LoginDataController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="6021" selection-end="6021" vertical-scroll-proportion="2.080292">
+        <state line="104" column="23" selection-start="3865" selection-end="3865" vertical-scroll-proportion="-13.086957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dev/grails-2.2.0/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="151" selection-start="7629" selection-end="7629" vertical-scroll-proportion="-7.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/StockController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="21" selection-start="3630" selection-end="3630" vertical-scroll-proportion="-6.130435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Stock.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-9.6">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="-9.782609">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="-8.26087">
+          <folding>
+            <element signature="e#23#61#0" expanded="true" />
+            <element signature="n#!!block;n#index#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#list#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#create#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#save#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#edit#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="n#!!block;n#update#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+            <element signature="e#2308#2802#0" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#!!block;n#ExchangeListController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="381" selection-end="489" vertical-scroll-proportion="-4.5652175">
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-14.565217">
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/stockanalyzer/DataGetterService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="28" selection-start="3340" selection-end="3340" vertical-scroll-proportion="0.5181347">
           <folding />
         </state>
       </provider>
