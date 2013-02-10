@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73bc669-21c2-4f5b-86ed-c786978b3da3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/stockanalyzer/TestDatabaseController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StockAnalyzer.iws" />
@@ -17,7 +11,7 @@
     <file path="/LoginData.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317812555" ignored="false" />
     <file path="/fragment.java" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358984359426" ignored="false" />
     <file path="/fragment.js2" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358103226660" ignored="false" />
-    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360472308867" ignored="false" />
+    <file path="/Dummy.txt" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1360472352289" ignored="false" />
     <file path="/LoginDataController.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1359317796181" ignored="false" />
     <file path="/pom.xml" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358109021572" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/stockanalyzer/BasicQuoteTests.groovy" changelist="e73bc669-21c2-4f5b-86ed-c786978b3da3" time="1358213950013" ignored="false" />
@@ -172,7 +166,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="112" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="111" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -200,7 +194,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="107" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy" line="106" class="stockanalyzer.ExchangeListController" package="stockanalyzer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -271,9 +265,9 @@
       <file leaf-file-name="Exchange.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="381" selection-end="489" vertical-scroll-proportion="-4.5652175">
+            <state line="19" column="0" selection-start="351" selection-end="459" vertical-scroll-proportion="2.3043478">
               <folding>
-                <element signature="e#23#52#0" expanded="true" />
+                <marker date="1360472355000" expanded="true" signature="23:58" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -282,7 +276,7 @@
       <file leaf-file-name="ExchangeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-14.565217">
+            <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="2.3043478">
               <folding>
                 <element signature="e#23#52#0" expanded="true" />
               </folding>
@@ -302,7 +296,7 @@
       <file leaf-file-name="ExchangeList.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="-9.782609">
+            <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="2.3043478">
               <folding />
             </state>
           </provider>
@@ -311,9 +305,8 @@
       <file leaf-file-name="ExchangeListController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="-8.26087">
+            <state line="57" column="0" selection-start="1895" selection-end="1895" vertical-scroll-proportion="2.3043478">
               <folding>
-                <element signature="e#23#61#0" expanded="true" />
                 <element signature="n#!!block;n#index#0;n#!!block;n#ExchangeListController#0" expanded="false" />
                 <element signature="n#!!block;n#list#0;n#!!block;n#ExchangeListController#0" expanded="false" />
                 <element signature="n#!!block;n#create#0;n#!!block;n#ExchangeListController#0" expanded="false" />
@@ -321,7 +314,7 @@
                 <element signature="n#!!block;n#show#0;n#!!block;n#ExchangeListController#0" expanded="false" />
                 <element signature="n#!!block;n#edit#0;n#!!block;n#ExchangeListController#0" expanded="false" />
                 <element signature="n#!!block;n#update#0;n#!!block;n#ExchangeListController#0" expanded="false" />
-                <element signature="e#2308#2802#0" expanded="false" />
+                <element signature="e#2269#2763#0" expanded="false" />
                 <element signature="n#!!block;n#delete#0;n#!!block;n#ExchangeListController#0" expanded="false" />
               </folding>
             </state>
@@ -1056,7 +1049,11 @@
       <created>1360472332939</created>
       <updated>1360472332939</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added getter200 for last 200 days. Probably needs to be changed to get last 200 quotes instead of calendar days">
+      <created>1360472358282</created>
+      <updated>1360472358282</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1265,7 +1262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/ExchangeList.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="-9.782609">
+        <state line="15" column="58" selection-start="244" selection-end="244" vertical-scroll-proportion="2.3043478">
           <folding />
         </state>
       </provider>
@@ -1275,9 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeListController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="-8.26087">
+        <state line="57" column="0" selection-start="1895" selection-end="1895" vertical-scroll-proportion="2.3043478">
           <folding>
-            <element signature="e#23#61#0" expanded="true" />
             <element signature="n#!!block;n#index#0;n#!!block;n#ExchangeListController#0" expanded="false" />
             <element signature="n#!!block;n#list#0;n#!!block;n#ExchangeListController#0" expanded="false" />
             <element signature="n#!!block;n#create#0;n#!!block;n#ExchangeListController#0" expanded="false" />
@@ -1285,7 +1281,7 @@
             <element signature="n#!!block;n#show#0;n#!!block;n#ExchangeListController#0" expanded="false" />
             <element signature="n#!!block;n#edit#0;n#!!block;n#ExchangeListController#0" expanded="false" />
             <element signature="n#!!block;n#update#0;n#!!block;n#ExchangeListController#0" expanded="false" />
-            <element signature="e#2308#2802#0" expanded="false" />
+            <element signature="e#2269#2763#0" expanded="false" />
             <element signature="n#!!block;n#delete#0;n#!!block;n#ExchangeListController#0" expanded="false" />
           </folding>
         </state>
@@ -1293,9 +1289,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/stockanalyzer/Exchange.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="381" selection-end="489" vertical-scroll-proportion="-4.5652175">
+        <state line="19" column="0" selection-start="351" selection-end="459" vertical-scroll-proportion="2.3043478">
           <folding>
-            <element signature="e#23#52#0" expanded="true" />
+            <marker date="1360472355000" expanded="true" signature="23:58" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1305,7 +1301,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/stockanalyzer/ExchangeController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="-14.565217">
+        <state line="108" column="0" selection-start="3897" selection-end="3897" vertical-scroll-proportion="2.3043478">
           <folding>
             <element signature="e#23#52#0" expanded="true" />
           </folding>
