@@ -223,5 +223,26 @@ class TestDatabaseController {
             return returnArray
         }
     }
+
+    def getExchangeListJSON() {
+        List exchangeList = Exchange.findAll()
+        JSON.registerObjectMarshaller(Exchange) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['code'] = it.code
+            return returnArray
+        }
+
+        render exchangeList as JSON
+
+        JSON.registerObjectMarshaller(Exchange) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['code'] = it.code
+            returnArray['symbols'] = it.symbols
+            return returnArray
+        }
+
+    }
 }
 

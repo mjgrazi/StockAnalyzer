@@ -55,4 +55,5 @@ class Exchange {
         data.retrieveLoginData()
     }
 
+
 }
