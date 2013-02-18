@@ -154,7 +154,7 @@ class TestDatabaseController {
                 quoteList = stock.quotes
             } else {
                 quoteList = BasicQuote.findAllBySymbol(input)
-                quote200List = BasicQuote.findAllByIdGreaterThan(quoteList.size() - 201)
+                def quote200List = BasicQuote.findAllByIdGreaterThan(quoteList.size() - 201)
                 stock.quotes = quote200List
             }
         }
@@ -183,7 +183,7 @@ class TestDatabaseController {
         }
     }
 
-    def stockdata() {
+    def stockData() {
         def quoteList
         String input = params.id
         input = input.toUpperCase()
@@ -218,13 +218,60 @@ class TestDatabaseController {
     }
 
     def getExchangeListJSON() {
-        List exchangeList = ExchangeList.list()
+        List exchangeList = Exchange.findAll()
+        JSON.registerObjectMarshaller(Exchange) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['code'] = it.code
+            return returnArray
+        }
+
         render exchangeList as JSON
+
+        JSON.registerObjectMarshaller(Exchange) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['code'] = it.code
+            returnArray['symbols'] = it.symbols
+            return returnArray
+        }
+
     }
 
     def defaultRunOperation() {
         populateExchanges()
         render "Exchanges loaded"
+    }
+
+    def getter60() {
+        def quoteList
+        String input = params.id
+        input = input.toUpperCase()
+        Stock stock = Stock.findBySymbol(input)
+        if (stock) {
+            if (stock.quotes.size() < 1) {
+                stock.retrieve200Quotes(LoginData.findByName('Login').loginToken, stock.exchange, stock.symbol)
+                quoteList = stock.quotes
+            } else {
+                quoteList = BasicQuote.findAllBySymbol(input)
+//                def quote60List = BasicQuote.findAllByIdGreaterThan(quoteList.size() - 61)
+                stock.quotes = BasicQuote.findAllByIdGreaterThan(quoteList.size() - 61)
+            }
+        }
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            returnArray['quotes'] = it.quotes
+            return returnArray
+        }
+        render stock as JSON
+        JSON.registerObjectMarshaller(Stock) {
+            def returnArray = [:]
+            returnArray['name'] = it.name
+            returnArray['symbol'] = it.symbol
+            return returnArray
+        }
     }
 
 }

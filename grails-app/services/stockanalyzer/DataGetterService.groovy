@@ -40,6 +40,8 @@ class DataGetterService {
 
                         exchangeList.addToExchanges(tempExchange)
                         println(tempExchange.name + " added to database")
+                        exchangeList.setName("Exchange List")
+                        exchangeList.save()
                     }
                 } else {
                     LoginData delLogin = LoginData.findByName("Login")
@@ -48,12 +50,9 @@ class DataGetterService {
                     retrieveExchangeList()
                 }
             } else {
-                LoginData newLogin = new LoginData()
-                newLogin.retrieveLoginData()
+                retrieveLoginData()
                 retrieveExchangeList()
             }
-            exchangeList.setName("Exchange List")
-            exchangeList.save()
         }
     }
 
@@ -82,8 +81,7 @@ class DataGetterService {
                 retrieveExchangeList()
             }
         } else {
-            LoginData newLogin = new LoginData()
-            newLogin.retrieveLoginData()
+            retrieveLoginData()
             retrieveExchangeList()
         }
     }
@@ -91,13 +89,40 @@ class DataGetterService {
     def getStockListForExchange(String exchangeCode) {
         if (Exchange.findByCode(exchangeCode)) {
             Exchange exchange = Exchange.findByCode(exchangeCode)
-            exchange.retrieveStockList(exchange.code)
+            retrieveStockList(exchange.code)
             exchange.save()
         }
     }
 
-    def getExchangeListJSON() {
-        ExchangeList exchangeList = ExchangeList.findByName("Exchange List")
+
+
+    def retrieveStockList(String exchangeCode) {
+        Exchange tempExchange = Exchange.findByCode(exchangeCode)
+        LoginData loginData = LoginData.findByName("Login")
+        if (loginData) {
+            HTTPBuilder http = new HTTPBuilder('http://ws.eoddata.com')
+            def loginResponse = http.get(path: '/data.asmx/SymbolList', query: [Token: loginData.loginToken, Exchange: exchangeCode])
+            String message = loginResponse.attributes().get 'Message'
+            if (message.equals("Success")) {
+                def symbolList = loginResponse.SYMBOLS[0]
+                symbolList.SYMBOL.each {
+                    Stock tempStock = new Stock()
+                    String tempCodeString = it.attributes().get 'Code'
+                    String tempNameString = it.attributes().get 'Name'
+                    tempStock.setName(tempNameString)
+                    tempStock.setSymbol(tempCodeString)
+                    tempStock.setExchange(exchangeCode)
+                    if (tempStock)
+                        addToSymbols(tempStock)
+                }
+            } else {
+                retrieveLoginData()
+                retrieveStockList(exchangeCode)
+            }
+        } else {
+            retrieveLoginData()
+            retrieveStockList(exchangeCode)
+        }
     }
 
 }

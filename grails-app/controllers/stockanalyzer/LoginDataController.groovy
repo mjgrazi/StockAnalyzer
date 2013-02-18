@@ -100,15 +100,4 @@ class LoginDataController {
             redirect(action: "show", id: id)
         }
     }
-
-    def doLogin() {
-        if (!LoginData.findByName("Login")) {
-            LoginData loginData = new LoginData()
-            loginData.retrieveLoginData()
-            render("Login Token: " + loginData.loginToken)
-        } else {
-            render("Login already exists")
-        }
-
-    }
 }
